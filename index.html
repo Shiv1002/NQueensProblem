@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Board Game</title>
+</head>
+
+<body class="">
+    <div class="user">
+        <input id="userInput" type="number" min="1" max="10" />
+        <button onclick="updateSize()">Create Board</button>
+    </div>
+
+    <div id="userDisplay">
+        <div id="boardStats">
+            <div id="boardSize"></div>
+            <div id="QueensStats">
+                <span>Number Of Queens Left:</span>
+                <span id="queensLeft"></span>
+            </div>
+        </div>
+        <div class="board" id="chessboard"></div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
