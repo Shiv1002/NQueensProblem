@@ -72,6 +72,15 @@ function createBoard() {
  
   board.style.width = 50 * n + "px";
 }
+function clearBoard(){
+  clearChessboard();
+  createBoard();
+  mapQueenPositions();
+  for (let index = 0; index < SizeOfBoard; index++) {
+    rowOccuied[index] = 0;
+    colOccuied[index] = 0;
+  }
+}
 
 // You can change the value of 'n' to create boards of different sizes
 createBoard(SizeOfBoard);
